@@ -1,19 +1,19 @@
-#$Revision: 1.2 $, $Date: 2003-08-01 14:18:20 $
+#$Revision: 1.3 $, $Date: 2003-08-11 22:46:32 $
 
 %define         _name
 
-Summary:        KDE icons - %{_name}
-Summary(pl):    Motyw ikon do KDE - %{_name}
-Name:           kde-icons-%{_name}
-Version:
-Release:        1
-License:        GPL
-Group:          Themes
-Source0:        %{_name}-%{version}.tar.bz2
+Summary:	KDE icons - %{_name}
+Summary(pl):	Motyw ikon do KDE - %{_name}
+Name:		kde-icons-%{_name}
+Version:	
+Release:	1
+License:	GPL
+Group:		Themes
+Source0:	%{_name}-%{version}.tar.bz2
 # Source0-md5:
 URL:
-Requires:       kdelibs
-BuildRoot:      %{tmpdir}/%{name}-%{version}-root-%(id -u -n)
+Requires:	kdelibs
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define         _htmldir        %{_docdir}/kde/HTML
 
