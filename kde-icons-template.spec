@@ -1,4 +1,4 @@
-#$Revision: 1.6 $, $Date: 2003-12-28 02:26:00 $
+#$Revision: 1.7 $, $Date: 2004-04-16 20:44:44 $
 
 %define         _name
 
@@ -15,7 +15,6 @@ URL:
 Requires:	kdelibs
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%define         _htmldir        %{_docdir}/kde/HTML
 
 %description
 %{_name} is
