@@ -1,4 +1,4 @@
-#$Revision: 1.9 $, $Date: 2004-04-17 23:17:20 $
+#$Revision: 1.10 $, $Date: 2004-04-17 23:41:02 $
 
 %define         _name
 
@@ -7,7 +7,7 @@ Summary(pl):	Motyw ikon do KDE - %{_name}
 Name:		kde-icons-%{_name}
 Version:
 Release:	1
-License:	GPL
+License:	check first if it's GPL
 Group:		Themes
 Source0:	%{_name}-%{version}.tar.bz2
 # Source0-md5:
