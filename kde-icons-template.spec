@@ -1,4 +1,4 @@
-#$Revision: 1.7 $, $Date: 2004-04-16 20:44:44 $
+#$Revision: 1.8 $, $Date: 2004-04-16 20:56:33 $
 
 %define         _name
 
@@ -28,11 +28,11 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_iconsdir}
 
-%{__tar} xjf %{SOURCE0} -C $RPM_BUILD_ROOT%{_iconsdir}
+%{__tar} xjf %{SOURCE0} -C $RPM_BUILD_ROOT%{_iconsdir}/
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%{_iconsdir}/
+%{_iconsdir}/*
