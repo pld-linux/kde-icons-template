@@ -1,4 +1,4 @@
-#$Revision: 1.8 $, $Date: 2004-04-16 20:56:33 $
+#$Revision: 1.9 $, $Date: 2004-04-17 23:17:20 $
 
 %define         _name
 
@@ -13,8 +13,8 @@ Source0:	%{_name}-%{version}.tar.bz2
 # Source0-md5:
 URL:
 Requires:	kdelibs
+BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
-
 
 %description
 %{_name} is
@@ -28,7 +28,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_iconsdir}
 
-%{__tar} xjf %{SOURCE0} -C $RPM_BUILD_ROOT%{_iconsdir}/
+%{__tar} xjf %{SOURCE0} -C $RPM_BUILD_ROOT%{_iconsdir}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
