@@ -1,4 +1,4 @@
-#$Revision: 1.1 $, $Date: 2003-07-31 11:55:46 $
+#$Revision: 1.2 $, $Date: 2003-08-01 14:18:20 $
 
 %define         _name
 
@@ -21,12 +21,13 @@ BuildRoot:      %{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %{_name} is
 
 %description -l pl
-%{_name} to temat ikon
+%{_name} to motyw ikon
 
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_iconsdir}
-%{__tar} xfj  %{SOURCE0} -C $RPM_BUILD_ROOT%{_iconsdir}
+
+%{__tar} xjf %{SOURCE0} -C $RPM_BUILD_ROOT%{_iconsdir}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
