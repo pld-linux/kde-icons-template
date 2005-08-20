@@ -1,17 +1,14 @@
-#$Revision: 1.10 $, $Date: 2004-04-17 23:41:02 $
-
 %define         _name
-
 Summary:	KDE icons - %{_name}
 Summary(pl):	Motyw ikon do KDE - %{_name}
 Name:		kde-icons-%{_name}
-Version:
+Version:	-
 Release:	1
 License:	check first if it's GPL
 Group:		Themes
 Source0:	%{_name}-%{version}.tar.bz2
 # Source0-md5:
-URL:
+URL:		-
 Requires:	kdelibs
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
